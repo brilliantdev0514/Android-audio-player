@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jean.jcplayersample.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/jcplayer"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.example.jean.jcplayer.view.JcPlayerView
+        android:id="@+id/jcplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_player_dark"
+        android:gravity="bottom"
+        app:next_icon_color="@android:color/holo_green_light"
+        app:pause_icon_color="@android:color/holo_green_light"
+        app:play_icon_color="@android:color/holo_green_light"
+        app:previous_icon_color="@android:color/holo_green_light"
+        app:progress_color="@android:color/holo_green_light"
+        app:random_icon_color="@android:color/white"
+        app:repeat_icon_color="@android:color/white"
+        app:seek_bar_color="@android:color/white"
+        app:text_audio_current_duration_color="@android:color/holo_green_light"
+        app:text_audio_duration_color="@android:color/holo_green_light"
+        app:text_audio_title_color="@android:color/white" />
+
+</RelativeLayout>
